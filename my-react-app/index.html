@@ -1,13 +1,731 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>PK. Java Jati | Produsen Mebel, Kusen & Pintu Kayu Solid Sejak 1990</title>
+  <meta name="description" content="PK. Java Jati - Produsen mebel, kusen, dan pintu berkualitas dari 100% kayu solid pilihan. Pengalaman 35+ tahun melayani proyek residensial dan komersial di Indonesia." />
+  <meta name="keywords" content="mebel kayu solid, kusen kayu, pintu kayu jati, produsen mebel, Java Jati, kayu solid, trap tangga, kitchen set kayu" />
+  <meta name="author" content="PK. Java Jati" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PK. Java Jati | Produsen Mebel, Kusen & Pintu Kayu Solid Sejak 1990" />
+  <meta property="og:description" content="Produsen mebel, kusen, dan pintu berkualitas dari 100% kayu solid pilihan. Pengalaman 35+ tahun." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/Logo-Java-Jati-.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/Logo-Java-Jati-.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#beranda" class="nav-logo" aria-label="PK. Java Jati - Beranda">
+        <img src="/Logo-Java-Jati-.png" alt="Logo PK. Java Jati - Produsen Mebel Kayu Solid" width="160" height="50" />
+      </a>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li class="nav-item" role="none"><a href="#beranda" role="menuitem">Beranda</a></li>
+        <li class="nav-item" role="none"><a href="#tentang" role="menuitem">Tentang Kami</a></li>
+        <li class="nav-item" role="none"><a href="#produk" role="menuitem">Produk</a></li>
+        <li class="nav-item" role="none"><a href="#jenis-kayu" role="menuitem">Jenis Kayu</a></li>
+        <li class="nav-item" role="none"><a href="#proses" role="menuitem">Proses</a></li>
+        <li class="nav-item" role="none"><a href="#portofolio" role="menuitem">Portofolio</a></li>
+        <li class="nav-item" role="none"><a href="#kontak" role="menuitem">Kontak</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================== HERO SECTION ====================== -->
+  <section class="hero" id="beranda">
+    <img
+      src="https://placehold.co/1920x1080/3E2723/F5EFE6?text=Workshop+Kayu+Java+Jati"
+      alt="Workshop produksi mebel kayu solid PK. Java Jati"
+      class="hero-bg"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Keahlian Mengolah Kayu Solid Sejak 1990</h1>
+      <p>Produsen mebel, kusen, dan pintu berkualitas premium dari 100% kayu solid pilihan dengan jaminan tidak memuai dan tidak melintir.</p>
+      <div class="hero-buttons">
+        <a href="#kontak" class="btn-primary">Minta Penawaran</a>
+        <a href="#portofolio" class="btn-secondary">Lihat Portofolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== KEUNGGULAN SECTION ====================== -->
+  <section class="features" id="keunggulan">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Mengapa Memilih Java Jati?</h2>
+
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">🪵</div>
+          <h3 class="feature-title">100% Kayu Solid Asli</h3>
+          <p>Kami hanya menggunakan kayu solid pilihan tanpa campuran, menjamin kekuatan dan keindahan alami setiap produk.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">🔥</div>
+          <h3 class="feature-title">Proses Oven Dry</h3>
+          <p>Setiap kayu melalui proses pengeringan oven (kiln dry) untuk menghilangkan kadar air berlebih dan mencegah kerusakan.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">✅</div>
+          <h3 class="feature-title">Anti Memuai & Melintir</h3>
+          <p>Dengan proses pengeringan yang tepat, produk kami dijamin tidak akan memuai atau melintir seiring waktu.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">👨‍🔧</div>
+          <h3 class="feature-title">Tenaga Ahli Berpengalaman</h3>
+          <p>Didukung oleh tim pengrajin kayu berpengalaman puluhan tahun dengan keahlian turun-temurun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PRODUK UNGGULAN SECTION ====================== -->
+  <section class="products" id="produk">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Produk & Layanan Kami</h2>
+      <p class="section-subtitle" data-aos="fade-up">Setiap produk dibuat dengan presisi tinggi dari kayu solid pilihan</p>
+
+      <div class="products-grid">
+        <!-- Produk 1: Trap Tangga -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-image">
+            <img
+              src="https://placehold.co/800x600/A67C52/FFFFFF?text=Trap+Tangga+Kayu+Solid"
+              alt="Trap tangga kayu solid dengan desain elegan buatan PK. Java Jati"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Trap Tangga</h3>
+            <p>Trap tangga kayu solid dengan desain elegan dan finishing premium. Tersedia dalam berbagai jenis kayu dan model custom sesuai kebutuhan.</p>
+            <a href="#kontak" class="product-link">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Produk 2: Pintu & Kusen -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-image">
+            <img
+              src="https://placehold.co/800x600/3E2723/F5EFE6?text=Pintu+%26+Kusen+Kayu"
+              alt="Pintu dan kusen kayu solid berkualitas tinggi buatan PK. Java Jati"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Pintu & Kusen</h3>
+            <p>Pintu dan kusen kayu solid berkualitas tinggi, tahan lama dengan desain klasik hingga modern. Proses oven dry menjamin tidak memuai.</p>
+            <a href="#kontak" class="product-link">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Produk 3: Kitchen Set -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-image">
+            <img
+              src="https://placehold.co/800x600/A67C52/FFFFFF?text=Kitchen+Set+Kayu+Solid"
+              alt="Kitchen set dari kayu solid untuk dapur modern buatan PK. Java Jati"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Kitchen Set</h3>
+            <p>Kitchen set dari kayu solid yang menggabungkan keindahan alami kayu dengan fungsionalitas dapur modern.</p>
+            <a href="#kontak" class="product-link">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Produk 4: Ornamen Kayu -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="product-image">
+            <img
+              src="https://placehold.co/800x600/3E2723/F5EFE6?text=Ornamen+%26+Ukiran+Kayu"
+              alt="Ornamen dan ukiran kayu handmade untuk interior dan eksterior"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Ornamen Kayu</h3>
+            <p>Ornamen dan ukiran kayu handmade untuk mempercantik interior dan eksterior rumah maupun bangunan komersial.</p>
+            <a href="#kontak" class="product-link">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Produk 5: Pesanan Custom -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="product-image">
+            <img
+              src="https://placehold.co/800x600/A67C52/FFFFFF?text=Pesanan+Custom+Mebel"
+              alt="Layanan pembuatan mebel custom sesuai desain dan kebutuhan Anda"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Pesanan Custom</h3>
+            <p>Layanan pembuatan mebel custom sesuai desain dan kebutuhan Anda. Konsultasi gratis untuk proyek spesial.</p>
+            <a href="#kontak" class="product-link">Lihat Detail →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== JENIS KAYU SECTION ====================== -->
+  <section class="wood-types" id="jenis-kayu">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Jenis Kayu Pilihan Kami</h2>
+      <p class="section-subtitle" data-aos="fade-up">Kami menggunakan berbagai jenis kayu berkualitas tinggi untuk setiap produk</p>
+
+      <div class="wood-types-grid">
+        <div class="wood-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="wood-icon">🟤</div>
+          <h3>Kayu Jati</h3>
+          <p>Raja kayu Indonesia. Tahan rayap, cuaca, dan sangat awet. Serat indah dengan warna coklat keemasan. Ideal untuk mebel premium dan pintu utama.</p>
+        </div>
+
+        <div class="wood-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="wood-icon">🟫</div>
+          <h3>Kayu Kamper</h3>
+          <p>Kayu aromatik dengan daya tahan tinggi terhadap serangga. Serat halus dan mudah diolah. Cocok untuk kusen, pintu, dan interior.</p>
+        </div>
+
+        <div class="wood-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="wood-icon">🔴</div>
+          <h3>Kayu Merbau</h3>
+          <p>Kayu keras dengan kekuatan tinggi dan warna merah kecoklatan yang khas. Sangat tahan air dan cocok untuk lantai serta trap tangga.</p>
+        </div>
+
+        <div class="wood-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="wood-icon">🟡</div>
+          <h3>Kayu Nyatoh</h3>
+          <p>Kayu dengan tekstur halus dan warna merah muda hingga coklat. Mudah difinishing dan ideal untuk furniture interior dan kitchen set.</p>
+        </div>
+
+        <div class="wood-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="wood-icon">🟠</div>
+          <h3>Kayu Bengkirai</h3>
+          <p>Kayu super keras dan sangat tahan cuaca. Pilihan utama untuk konstruksi outdoor, deck, dan aplikasi eksterior.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PROSES PRODUKSI SECTION ====================== -->
+  <section class="process" id="proses">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Proses Produksi Kami</h2>
+      <p class="section-subtitle" data-aos="fade-up">Setiap tahap dikerjakan dengan teliti untuk menghasilkan produk berkualitas terbaik</p>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <h3>Seleksi Kayu</h3>
+            <p>Pemilihan kayu solid berkualitas tinggi dari sumber terpercaya. Setiap batang kayu diperiksa kualitas serat, kekerasan, dan kesehatannya.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <h3>Pengeringan Oven</h3>
+            <p>Kayu dikeringkan dalam oven khusus (kiln dry) dengan suhu dan waktu yang presisi untuk mencapai kadar air optimal 8-12%.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <h3>Pengerjaan & Perakitan</h3>
+            <p>Proses pemotongan, pembentukan, dan perakitan oleh tenaga ahli berpengalaman menggunakan mesin modern dan teknik joinery tradisional.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-number">04</div>
+          <div class="timeline-content">
+            <h3>Finishing</h3>
+            <p>Proses pengamplasan halus, pewarnaan, dan pelapisan coating berkualitas tinggi untuk perlindungan dan keindahan maksimal.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-number">05</div>
+          <div class="timeline-content">
+            <h3>Pengiriman & Pemasangan</h3>
+            <p>Pengiriman aman dengan packaging khusus dan pemasangan profesional langsung di lokasi proyek Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PORTOFOLIO SECTION ====================== -->
+  <section class="portfolio" id="portofolio">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Portofolio Proyek</h2>
+      <p class="section-subtitle" data-aos="fade-up">Karya terbaik kami untuk berbagai proyek di seluruh Indonesia</p>
+
+      <div class="filter-buttons" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="residensial">Residensial</button>
+        <button class="filter-btn" data-filter="komersial">Komersial</button>
+        <button class="filter-btn" data-filter="properti">Proyek Properti</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Portofolio 1 -->
+        <div class="portfolio-item" data-category="residensial" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="https://placehold.co/800x600/A67C52/FFFFFF?text=Rumah+Mewah+Menteng"
+            alt="Proyek mebel kayu solid untuk rumah mewah di Menteng Jakarta"
+            loading="lazy"
+            width="800"
+            height="600"
+          />
+          <div class="portfolio-overlay">
+            <h3>Rumah Mewah Menteng</h3>
+            <span>Residensial</span>
+          </div>
+        </div>
+
+        <!-- Portofolio 2 -->
+        <div class="portfolio-item" data-category="komersial" data-aos="fade-up" data-aos-delay="200">
+          <img
+            src="https://placehold.co/800x1000/3E2723/F5EFE6?text=Hotel+Bintang+5+Bali"
+            alt="Proyek mebel dan interior kayu solid untuk hotel bintang 5 di Bali"
+            loading="lazy"
+            width="800"
+            height="1000"
+          />
+          <div class="portfolio-overlay">
+            <h3>Hotel Bintang 5 Bali</h3>
+            <span>Komersial</span>
+          </div>
+        </div>
+
+        <!-- Portofolio 3 -->
+        <div class="portfolio-item" data-category="properti" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="https://placehold.co/800x600/A67C52/FFFFFF?text=Apartemen+Premium+Jakarta"
+            alt="Proyek interior kayu solid untuk apartemen premium di Jakarta"
+            loading="lazy"
+            width="800"
+            height="600"
+          />
+          <div class="portfolio-overlay">
+            <h3>Apartemen Premium Jakarta</h3>
+            <span>Proyek Properti</span>
+          </div>
+        </div>
+
+        <!-- Portofolio 4 -->
+        <div class="portfolio-item" data-category="residensial" data-aos="fade-up" data-aos-delay="400">
+          <img
+            src="https://placehold.co/800x1000/3E2723/F5EFE6?text=Vila+Modern+Bandung"
+            alt="Proyek mebel kayu solid untuk vila modern di Bandung"
+            loading="lazy"
+            width="800"
+            height="1000"
+          />
+          <div class="portfolio-overlay">
+            <h3>Vila Modern Bandung</h3>
+            <span>Residensial</span>
+          </div>
+        </div>
+
+        <!-- Portofolio 5 -->
+        <div class="portfolio-item" data-category="komersial" data-aos="fade-up" data-aos-delay="500">
+          <img
+            src="https://placehold.co/800x600/A67C52/FFFFFF?text=Restoran+Fine+Dining"
+            alt="Proyek interior kayu solid untuk restoran fine dining"
+            loading="lazy"
+            width="800"
+            height="600"
+          />
+          <div class="portfolio-overlay">
+            <h3>Restoran Fine Dining</h3>
+            <span>Komersial</span>
+          </div>
+        </div>
+
+        <!-- Portofolio 6 -->
+        <div class="portfolio-item" data-category="properti" data-aos="fade-up" data-aos-delay="600">
+          <img
+            src="https://placehold.co/800x600/3E2723/F5EFE6?text=Perumahan+Elite+Surabaya"
+            alt="Proyek mebel kayu solid untuk perumahan elite di Surabaya"
+            loading="lazy"
+            width="800"
+            height="600"
+          />
+          <div class="portfolio-overlay">
+            <h3>Perumahan Elite Surabaya</h3>
+            <span>Proyek Properti</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== KLIEN & PENCAPAIAN SECTION ====================== -->
+  <section class="clients" id="klien">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Dipercaya oleh Kontraktor Ternama</h2>
+
+      <div class="client-logos" data-aos="fade-up">
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+1"
+            alt="Logo klien mitra PK. Java Jati 1"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+2"
+            alt="Logo klien mitra PK. Java Jati 2"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+3"
+            alt="Logo klien mitra PK. Java Jati 3"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+4"
+            alt="Logo klien mitra PK. Java Jati 4"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+5"
+            alt="Logo klien mitra PK. Java Jati 5"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+        <div class="client-logo">
+          <img
+            src="https://placehold.co/200x80/F5EFE6/A67C52?text=Logo+Klien+6"
+            alt="Logo klien mitra PK. Java Jati 6"
+            loading="lazy"
+            width="200"
+            height="80"
+          />
+        </div>
+      </div>
+
+      <div class="stats" data-aos="fade-up">
+        <div class="stat-item">
+          <div class="stat-number">35+</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div> <!-- GANTI: sesuaikan jumlah -->
+          <div class="stat-label">Proyek Selesai</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div> <!-- GANTI: sesuaikan jumlah -->
+          <div class="stat-label">Klien Puas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div> <!-- GANTI: sesuaikan jumlah -->
+          <div class="stat-label">Kontraktor Mitra</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TENTANG KAMI SECTION ====================== -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Tentang PK. Java Jati</h2>
+
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img
+            src="https://placehold.co/800x900/3E2723/F5EFE6?text=Workshop+%26+Pabrik+Java+Jati"
+            alt="Workshop dan pabrik produksi PK. Java Jati dengan mesin modern"
+            loading="lazy"
+            width="800"
+            height="900"
+          />
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <p class="about-lead">Berdiri sejak tahun 1990, PK. Java Jati telah menjadi produsen mebel, kusen, dan pintu kayu solid terpercaya di Indonesia. Dengan pengalaman lebih dari 35 tahun, kami telah melayani ribuan proyek dari residensial hingga komersial.</p>
+
+          <h3>Visi Kami</h3>
+          <p>Menjadi produsen mebel dan produk kayu solid terdepan di Indonesia yang mengutamakan kualitas, inovasi, dan kepuasan pelanggan.</p>
+
+          <h3>Misi Kami</h3>
+          <ul>
+            <li>Menghasilkan produk kayu berkualitas tinggi dengan standar internasional</li>
+            <li>Menggunakan teknologi modern dengan tetap mempertahankan keahlian tradisional</li>
+            <li>Memberikan pelayanan terbaik dari konsultasi hingga pemasangan</li>
+            <li>Menjaga kelestarian hutan melalui penggunaan kayu dari sumber legal dan berkelanjutan</li>
+          </ul>
+
+          <h3>Fasilitas Produksi</h3>
+          <p>Workshop kami dilengkapi dengan mesin-mesin modern termasuk CNC router, mesin kiln dry berkapasitas besar, dan berbagai peralatan woodworking presisi tinggi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CTA SECTION ====================== -->
+  <section class="cta-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Siap Mewujudkan Proyek Impian Anda?</h2>
+      <p>Konsultasikan kebutuhan mebel dan produk kayu Anda dengan tim ahli kami. Gratis!</p>
+      <a href="#kontak" class="btn-primary">Hubungi Kami Sekarang</a>
+    </div>
+  </section>
+
+  <!-- ====================== KONTAK SECTION ====================== -->
+  <section class="contact" id="kontak">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Hubungi Kami</h2>
+      <p class="section-subtitle" data-aos="fade-up">Kami siap membantu mewujudkan proyek mebel impian Anda</p>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-right">
+          <form id="contactForm" action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap <span aria-hidden="true">*</span></label>
+              <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda" />
+            </div>
+
+            <div class="form-group">
+              <label for="whatsapp">Nomor WhatsApp <span aria-hidden="true">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Contoh: 08123456789" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="jenis-kebutuhan">Jenis Kebutuhan</label>
+              <select id="jenis-kebutuhan" name="jenis-kebutuhan">
+                <option value="">Pilih Jenis Kebutuhan</option>
+                <option value="trap-tangga">Trap Tangga</option>
+                <option value="pintu-kusen">Pintu & Kusen</option>
+                <option value="kitchen-set">Kitchen Set</option>
+                <option value="ornamen-kayu">Ornamen Kayu</option>
+                <option value="pesanan-custom">Pesanan Custom</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="jenis-kayu">Jenis Kayu</label>
+              <select id="jenis-kayu-select" name="jenis-kayu">
+                <option value="">Pilih Jenis Kayu</option>
+                <option value="jati">Kayu Jati</option>
+                <option value="kamper">Kayu Kamper</option>
+                <option value="merbau">Kayu Merbau</option>
+                <option value="nyatoh">Kayu Nyatoh</option>
+                <option value="bengkirai">Kayu Bengkirai</option>
+                <option value="belum-tahu">Belum Tahu / Butuh Konsultasi</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="lokasi">Lokasi Proyek</label>
+              <input type="text" id="lokasi" name="lokasi" placeholder="Contoh: Jakarta Selatan" />
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan / Detail Kebutuhan</label>
+              <textarea id="pesan" name="pesan" rows="5" placeholder="Jelaskan detail kebutuhan proyek Anda..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="gambar">Upload Gambar Referensi <small>(Opsional)</small></label>
+              <input type="file" id="gambar" name="gambar" accept="image/*" />
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit">Kirim Penawaran</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-left">
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">📍</span>
+            <div>
+              <h3>Alamat</h3>
+              <p><!-- GANTI: Masukkan alamat lengkap -->Jl. Raya Java Jati No. 123, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">📞</span>
+            <div>
+              <h3>Telepon</h3>
+              <p><!-- GANTI: Masukkan nomor telepon -->(021) 1234-5678</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">📱</span>
+            <div>
+              <h3>WhatsApp</h3>
+              <p><!-- GANTI: Masukkan nomor WhatsApp -->0812-3456-7890</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">✉️</span>
+            <div>
+              <h3>Email</h3>
+              <p><!-- GANTI: Masukkan email -->info@javajati.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon" aria-hidden="true">🕐</span>
+            <div>
+              <h3>Jam Kerja</h3>
+              <p><!-- GANTI: Masukkan jam operasional -->Senin - Sabtu: 08.00 - 17.00 WIB</p>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="info-map">
+            <!-- GANTI: Masukkan embed Google Maps -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.29279498888!2d106.6894282!3d-6.2297401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border:0; border-radius: 12px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi PK. Java Jati di Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Column 1: About -->
+        <div class="footer-col">
+          <a href="#beranda" class="footer-logo" aria-label="PK. Java Jati - Beranda">
+            <img src="/Logo-Java-Jati-.png" alt="Logo PK. Java Jati" width="140" height="44" loading="lazy" />
+          </a>
+          <p>Produsen mebel, kusen, dan pintu kayu solid berkualitas tinggi sejak 1990.</p>
+        </div>
+
+        <!-- Footer Column 2: Quick Menu -->
+        <div class="footer-col">
+          <h3 class="footer-title">Menu Cepat</h3>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-title">Kontak</h3>
+          <ul>
+            <li><!-- GANTI: Masukkan alamat lengkap -->📍 Jl. Raya Java Jati No. 123, Indonesia</li>
+            <li><!-- GANTI: Masukkan nomor telepon -->📞 (021) 1234-5678</li>
+            <li><!-- GANTI: Masukkan email -->✉️ info@javajati.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook PK. Java Jati" title="Facebook">📘</a>
+        <a href="#" aria-label="Instagram PK. Java Jati" title="Instagram">📸</a>
+        <a href="#" aria-label="YouTube PK. Java Jati" title="YouTube">▶️</a>
+        <a href="#" aria-label="WhatsApp PK. Java Jati" title="WhatsApp">💬</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 PK. Java Jati. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================== FLOATING WHATSAPP BUTTON ====================== -->
+  <!-- GANTI: nomor WhatsApp -->
+  <a
+    href="https://wa.me/6281234567890"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Hubungi kami via WhatsApp"
+    title="Chat via WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Vite Module Entry -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
