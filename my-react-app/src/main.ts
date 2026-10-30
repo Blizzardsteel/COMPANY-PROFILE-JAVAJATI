@@ -52,7 +52,7 @@ function initApp() {
       e.preventDefault();
       const target = document.querySelector((anchor as HTMLAnchorElement).getAttribute('href') || '');
       if (target) {
-        const offsetTop = (target as HTMLElement).offsetTop - 80;
+        const offsetTop = (target as HTMLElement).offsetTop - 95;
         window.scrollTo({
           top: offsetTop,
           behavior: 'smooth'

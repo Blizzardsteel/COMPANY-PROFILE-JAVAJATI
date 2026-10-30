@@ -5,9 +5,8 @@
      Medium Brown:  #A67C52
      White:         #FFFFFF
      Natural Cream: #F5EFE6
-   Fonts:
-     Headings: 'Playfair Display', serif
-     Body:     'Inter', sans-serif
+   Font:
+     Primary: 'Poppins', sans-serif
    ============================================================ */
 
 /* -------------------------------------------------------
@@ -23,11 +22,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 100px;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #3E2723;
   background: #FFFFFF;
   line-height: 1.6;
@@ -40,7 +39,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   line-height: 1.3;
 }
 
@@ -70,7 +70,8 @@ img {
    SECTION TITLES
    ------------------------------------------------------- */
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   font-size: 2rem;
   color: #3E2723;
   text-align: center;
@@ -129,13 +130,32 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 15px 20px;
+  padding: 10px 20px;
+  transition: padding 0.3s ease;
+}
+
+.navbar.scrolled .nav-container {
+  padding: 6px 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.03);
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 62px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease;
 }
 
 /* Mobile menu */
@@ -243,14 +263,27 @@ img {
 }
 
 /* Desktop navbar */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .nav-container {
+    justify-content: center;
+    gap: 36px;
+  }
+
+  .nav-logo img {
+    height: 82px;
+  }
+
+  .navbar.scrolled .nav-logo img {
+    height: 68px;
+  }
+
   .nav-menu {
     position: static;
     flex-direction: row;
     width: auto;
     height: auto;
     background: none;
-    gap: 30px;
+    gap: 20px;
   }
 
   .hamburger {
@@ -259,6 +292,24 @@ img {
 
   .nav-overlay {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-container {
+    gap: 48px;
+  }
+
+  .nav-menu {
+    gap: 26px;
+  }
+
+  .nav-logo img {
+    height: 88px;
+  }
+
+  .navbar.scrolled .nav-logo img {
+    height: 72px;
   }
 }
 
@@ -320,7 +371,7 @@ img {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-primary:hover {
@@ -339,7 +390,7 @@ img {
   font-size: 1rem;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-secondary:hover {
@@ -647,7 +698,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   z-index: 2;
@@ -738,7 +789,7 @@ img {
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .filter-btn:hover,
@@ -875,7 +926,7 @@ img {
 }
 
 .stat-number {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   color: #A67C52;
   font-weight: 700;
@@ -1056,7 +1107,7 @@ img {
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   transition: border-color 0.3s ease;
   background: #FFFFFF;
