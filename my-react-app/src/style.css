@@ -116,9 +116,13 @@ img {
   position: sticky;
   top: 0;
   background: #FFFFFF;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   z-index: 1000;
-  transition: background 0.3s;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 25px rgba(62, 39, 35, 0.15);
 }
 
 .nav-container {
@@ -174,11 +178,13 @@ img {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item a.active {
   color: #A67C52;
 }
 
-.nav-item a:hover::after {
+.nav-item a:hover::after,
+.nav-item a.active::after {
   width: 100%;
   left: 0;
 }
@@ -753,6 +759,11 @@ img {
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 4 / 3;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {

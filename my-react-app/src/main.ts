@@ -5,7 +5,7 @@ import './style.css'
 // ========================================
 
 // Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
 
   // 1. NAVBAR SCROLL EFFECT
   // Add 'scrolled' class to .navbar when page scrolls past 50px
@@ -270,4 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add transition for navbar hide/show
   navbar.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
 
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
